@@ -1,3 +1,0 @@
-/tmp/tmp.xZ6NOh6gUP/cmake-build-debug/CMakeFiles/kernel.elf.dir
-/tmp/tmp.xZ6NOh6gUP/cmake-build-debug/CMakeFiles/edit_cache.dir
-/tmp/tmp.xZ6NOh6gUP/cmake-build-debug/CMakeFiles/rebuild_cache.dir
