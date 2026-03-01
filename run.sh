@@ -1,0 +1,18 @@
+#!/bin/bash
+set -xue
+
+QEMU=qemu-system-riscv32
+
+BIOS=/usr/lib/riscv32-linux-gnu/opensbi/generic/fw_dynamic.bin
+
+CC=clang
+CFLAGS="-std=c11 -O2 -g3 -Wall -Wextra --target=riscv32-unknown-elf -fuse-ld=lld -fno-stack-protector -ffreestanding -nostdlib"
+
+$CC $CFLAGS -Wl,-Tkernel.ld -Wl,-Map=kernel.map -o kernel.elf kernel.c common.c
+
+$QEMU -machine virt \
+    -bios "$BIOS" \
+    -kernel kernel.elf \
+    -nographic \
+    -serial mon:stdio \
+    --no-reboot

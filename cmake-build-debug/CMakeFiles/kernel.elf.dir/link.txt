@@ -1,0 +1,1 @@
+/usr/bin/riscv64-unknown-elf-gcc -march=rv32imac -mabi=ilp32 -mcmodel=medany -std=c11 -O2 -g3 -Wall -fno-stack-protector -ffreestanding -nostdlib -fno-pie -g -Wl,-T/tmp/tmp.xZ6NOh6gUP/kernel.ld -nostdlib CMakeFiles/kernel.elf.dir/kernel.c.obj CMakeFiles/kernel.elf.dir/common.c.obj -o kernel.elf 
