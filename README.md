@@ -1,12 +1,4 @@
-这个教程非常硬核，既然你已经写到了第10章“进程”，说明你已经攻克了 RISC-V 异常处理、内存分配等关键难点。第10章的核心是**上下文切换（Context Switch）**和**调度循环（Yield）**。
-
-针对你的进度，我为你写了一份符合“大二学生手搓项目”语气、且极具技术深度的 README。
-
----
-
-### 📄 README 模板
-
-# Simple-RISCV-OS (Developing)
+# AN-RISCV-OS (Developing)
 
 > **"Reinventing the wheel to master the first principles of Operating Systems."**
 
